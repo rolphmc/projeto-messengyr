@@ -1,5 +1,7 @@
 # Messengyr
 
+Sistema de chat desenvolvido em elixir através do framework Phoenix, seu propósito foi adquirir os conhecimentos basicos da ferramenta e assim possibilitar o desenvolvimento do projeto livraria-phoenix encontrado em meus repositórios
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
