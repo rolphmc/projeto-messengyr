@@ -1,0 +1,15 @@
+<div class="card login page">
+
+    <h1>Log in to Messenger</h1>
+
+    <%= form_for @conn, Routes.page_path(@conn, :login_user), [as: :credentials], fn f -> %>
+
+      <%= text_input f, :username, placeholder: "Username" %>
+
+      <%= text_input f, :password, placeholder: "Password", type: "password" %>
+
+      <%= submit "Log in", class: "login" %>
+
+    <% end %>
+  
+</div>

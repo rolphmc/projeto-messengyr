@@ -1,0 +1,42 @@
+<div class="tagline">
+  <h1>Welcome to Messengyr!</h1>
+  <h2>A messenger clone built in Elixir + Phoenix</h2>
+</div>
+
+<div class="action-boxes">
+
+  <div class="card login">
+    
+    <h1>Log in to Messenger</h1>
+    
+    <%= form_for @conn, Routes.page_path(@conn, :login_user), [as: :credentials], fn f -> %>
+
+      <%= text_input f, :username, placeholder: "Username" %>
+
+      <%= text_input f, :password, placeholder: "Password", type: "password" %>
+
+      <%= submit "Log in", class: "login" %>
+
+    <% end %>
+
+  </div>
+
+  <div class="card login">
+  
+    <h1>Sign up for Messenger</h1>
+
+    <%= form_for @user_changeset, Routes.page_path(@conn, :create_user), fn f -> %>
+
+      <%= text_input f, :email, placeholder: "Email" %>
+
+      <%= text_input f, :username, placeholder: "Username" %>
+
+      <%= text_input f, :password, placeholder: "Password", type: "password" %>
+
+      <%= submit "Sign up", class: "signup" %>
+
+    <% end %>
+  
+  </div>
+
+</div>
